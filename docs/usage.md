@@ -1,42 +1,42 @@
-# Usage Guide
+# 使用ガイド
 
-Complete guide to using agents, slash commands, and multi-agent workflows.
+エージェント、スラッシュコマンド、マルチエージェントワークフローの使用に関する完全ガイド。
 
-## Overview
+## 概要
 
-The plugin ecosystem provides two primary interfaces:
+プラグインエコシステムは2つの主要なインターフェースを提供します：
 
-1. **Slash Commands** - Direct invocation of tools and workflows
-2. **Natural Language** - Claude reasons about which agents to use
+1. **スラッシュコマンド** - ツールとワークフローの直接呼び出し
+2. **自然言語** - Claudeがどのエージェントを使用するかを判断
 
-## Slash Commands
+## スラッシュコマンド
 
-Slash commands are the primary interface for working with agents and workflows. Each plugin provides namespaced commands that you can run directly.
+スラッシュコマンドは、エージェントとワークフローを操作するための主要なインターフェースです。各プラグインは、直接実行できる名前空間付きコマンドを提供します。
 
-### Command Format
+### コマンド形式
 
 ```bash
 /plugin-name:command-name [arguments]
 ```
 
-### Discovering Commands
+### コマンドの検出
 
-List all available slash commands from installed plugins:
+インストール済みプラグインから利用可能なすべてのスラッシュコマンドを一覧表示：
 
 ```bash
 /plugin
 ```
 
-### Benefits of Slash Commands
+### スラッシュコマンドの利点
 
-- **Direct invocation** - No need to describe what you want in natural language
-- **Structured arguments** - Pass parameters explicitly for precise control
-- **Composability** - Chain commands together for complex workflows
-- **Discoverability** - Use `/plugin` to see all available commands
+- **直接呼び出し** - 自然言語で説明する必要がありません
+- **構造化された引数** - パラメータを明示的に渡して正確な制御が可能
+- **組み合わせ可能性** - コマンドを連結して複雑なワークフローを構築
+- **発見可能性** - `/plugin`を使用して利用可能なすべてのコマンドを確認
 
-## Natural Language
+## 自然言語
 
-Agents can also be invoked through natural language when you need Claude to reason about which specialist to use:
+Claudeにどのスペシャリストを使用するかを判断させる必要がある場合、エージェントは自然言語を通じて呼び出すこともできます：
 
 ```
 "Use backend-architect to design the authentication API"
@@ -44,328 +44,328 @@ Agents can also be invoked through natural language when you need Claude to reas
 "Get performance-engineer to optimize this database query"
 ```
 
-Claude Code automatically selects and coordinates the appropriate agents based on your request.
+Claude Codeは、あなたのリクエストに基づいて適切なエージェントを自動的に選択して調整します。
 
-## Command Reference by Category
+## カテゴリ別コマンドリファレンス
 
-### Development & Features
+### 開発・機能
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/backend-development:feature-development` | End-to-end backend feature development |
-| `/full-stack-orchestration:full-stack-feature` | Complete full-stack feature implementation |
-| `/multi-platform-apps:multi-platform` | Cross-platform app development coordination |
+| `/backend-development:feature-development` | エンドツーエンドのバックエンド機能開発 |
+| `/full-stack-orchestration:full-stack-feature` | 完全なフルスタック機能の実装 |
+| `/multi-platform-apps:multi-platform` | クロスプラットフォームアプリ開発の調整 |
 
-### Testing & Quality
+### テスト・品質
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/unit-testing:test-generate` | Generate comprehensive unit tests |
-| `/tdd-workflows:tdd-cycle` | Complete TDD red-green-refactor cycle |
-| `/tdd-workflows:tdd-red` | Write failing tests first |
-| `/tdd-workflows:tdd-green` | Implement code to pass tests |
-| `/tdd-workflows:tdd-refactor` | Refactor with passing tests |
+| `/unit-testing:test-generate` | 包括的なユニットテストの生成 |
+| `/tdd-workflows:tdd-cycle` | 完全なTDD レッド・グリーン・リファクタサイクル |
+| `/tdd-workflows:tdd-red` | 最初に失敗するテストを作成 |
+| `/tdd-workflows:tdd-green` | テストをパスするコードを実装 |
+| `/tdd-workflows:tdd-refactor` | パスしたテストでリファクタリング |
 
-### Code Quality & Review
+### コード品質・レビュー
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/code-review-ai:ai-review` | AI-powered code review |
-| `/comprehensive-review:full-review` | Multi-perspective analysis |
-| `/comprehensive-review:pr-enhance` | Enhance pull requests |
+| `/code-review-ai:ai-review` | AI駆動のコードレビュー |
+| `/comprehensive-review:full-review` | 多角的な分析 |
+| `/comprehensive-review:pr-enhance` | プルリクエストの強化 |
 
-### Debugging & Troubleshooting
+### デバッグ・トラブルシューティング
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/debugging-toolkit:smart-debug` | Interactive smart debugging |
-| `/incident-response:incident-response` | Production incident management |
-| `/incident-response:smart-fix` | Automated incident resolution |
-| `/error-debugging:error-analysis` | Deep error analysis |
-| `/error-debugging:error-trace` | Stack trace debugging |
-| `/error-diagnostics:smart-debug` | Smart diagnostic debugging |
-| `/distributed-debugging:debug-trace` | Distributed system tracing |
+| `/debugging-toolkit:smart-debug` | インタラクティブなスマートデバッグ |
+| `/incident-response:incident-response` | 本番環境のインシデント管理 |
+| `/incident-response:smart-fix` | 自動インシデント解決 |
+| `/error-debugging:error-analysis` | 詳細なエラー分析 |
+| `/error-debugging:error-trace` | スタックトレースのデバッグ |
+| `/error-diagnostics:smart-debug` | スマート診断デバッグ |
+| `/distributed-debugging:debug-trace` | 分散システムのトレース |
 
-### Security
+### セキュリティ
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/security-scanning:security-hardening` | Comprehensive security hardening |
-| `/security-scanning:security-sast` | Static application security testing |
-| `/security-scanning:security-dependencies` | Dependency vulnerability scanning |
-| `/security-compliance:compliance-check` | SOC2/HIPAA/GDPR compliance |
-| `/frontend-mobile-security:xss-scan` | XSS vulnerability scanning |
+| `/security-scanning:security-hardening` | 包括的なセキュリティ強化 |
+| `/security-scanning:security-sast` | 静的アプリケーションセキュリティテスト |
+| `/security-scanning:security-dependencies` | 依存関係の脆弱性スキャン |
+| `/security-compliance:compliance-check` | SOC2/HIPAA/GDPR コンプライアンス |
+| `/frontend-mobile-security:xss-scan` | XSS脆弱性スキャン |
 
-### Infrastructure & Deployment
+### インフラストラクチャ・デプロイメント
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/observability-monitoring:monitor-setup` | Setup monitoring infrastructure |
-| `/observability-monitoring:slo-implement` | Implement SLO/SLI metrics |
-| `/deployment-validation:config-validate` | Pre-deployment validation |
-| `/cicd-automation:workflow-automate` | CI/CD pipeline automation |
+| `/observability-monitoring:monitor-setup` | 監視インフラストラクチャのセットアップ |
+| `/observability-monitoring:slo-implement` | SLO/SLIメトリクスの実装 |
+| `/deployment-validation:config-validate` | デプロイ前の検証 |
+| `/cicd-automation:workflow-automate` | CI/CDパイプラインの自動化 |
 
-### Data & ML
+### データ・機械学習
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/machine-learning-ops:ml-pipeline` | ML training pipeline orchestration |
-| `/data-engineering:data-pipeline` | ETL/ELT pipeline construction |
-| `/data-engineering:data-driven-feature` | Data-driven feature development |
+| `/machine-learning-ops:ml-pipeline` | ML学習パイプラインのオーケストレーション |
+| `/data-engineering:data-pipeline` | ETL/ELTパイプラインの構築 |
+| `/data-engineering:data-driven-feature` | データ駆動型機能開発 |
 
-### Documentation
+### ドキュメント
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/code-documentation:doc-generate` | Generate comprehensive documentation |
-| `/code-documentation:code-explain` | Explain code functionality |
-| `/documentation-generation:doc-generate` | OpenAPI specs, diagrams, tutorials |
+| `/code-documentation:doc-generate` | 包括的なドキュメントの生成 |
+| `/code-documentation:code-explain` | コード機能の説明 |
+| `/documentation-generation:doc-generate` | OpenAPI仕様、図、チュートリアル |
 
-### Refactoring & Maintenance
+### リファクタリング・メンテナンス
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/code-refactoring:refactor-clean` | Code cleanup and refactoring |
-| `/code-refactoring:tech-debt` | Technical debt management |
-| `/codebase-cleanup:deps-audit` | Dependency auditing |
-| `/codebase-cleanup:tech-debt` | Technical debt reduction |
-| `/framework-migration:legacy-modernize` | Legacy code modernization |
-| `/framework-migration:code-migrate` | Framework migration |
-| `/framework-migration:deps-upgrade` | Dependency upgrades |
+| `/code-refactoring:refactor-clean` | コードのクリーンアップとリファクタリング |
+| `/code-refactoring:tech-debt` | 技術的負債の管理 |
+| `/codebase-cleanup:deps-audit` | 依存関係の監査 |
+| `/codebase-cleanup:tech-debt` | 技術的負債の削減 |
+| `/framework-migration:legacy-modernize` | レガシーコードの近代化 |
+| `/framework-migration:code-migrate` | フレームワークの移行 |
+| `/framework-migration:deps-upgrade` | 依存関係のアップグレード |
 
-### Database
+### データベース
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/database-migrations:sql-migrations` | SQL migration automation |
-| `/database-migrations:migration-observability` | Migration monitoring |
-| `/database-cloud-optimization:cost-optimize` | Database and cloud optimization |
+| `/database-migrations:sql-migrations` | SQLマイグレーションの自動化 |
+| `/database-migrations:migration-observability` | マイグレーションの監視 |
+| `/database-cloud-optimization:cost-optimize` | データベースとクラウドの最適化 |
 
-### Git & PR Workflows
+### Git・PRワークフロー
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/git-pr-workflows:pr-enhance` | Enhance pull request quality |
-| `/git-pr-workflows:onboard` | Team onboarding automation |
-| `/git-pr-workflows:git-workflow` | Git workflow automation |
+| `/git-pr-workflows:pr-enhance` | プルリクエスト品質の向上 |
+| `/git-pr-workflows:onboard` | チームオンボーディングの自動化 |
+| `/git-pr-workflows:git-workflow` | Gitワークフローの自動化 |
 
-### Project Scaffolding
+### プロジェクトスキャフォールディング
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/python-development:python-scaffold` | FastAPI/Django project setup |
-| `/javascript-typescript:typescript-scaffold` | Next.js/React + Vite setup |
-| `/systems-programming:rust-project` | Rust project scaffolding |
+| `/python-development:python-scaffold` | FastAPI/Djangoプロジェクトのセットアップ |
+| `/javascript-typescript:typescript-scaffold` | Next.js/React + Viteのセットアップ |
+| `/systems-programming:rust-project` | Rustプロジェクトのスキャフォールディング |
 
-### AI & LLM Development
+### AI・LLM開発
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/llm-application-dev:langchain-agent` | LangChain agent development |
-| `/llm-application-dev:ai-assistant` | AI assistant implementation |
-| `/llm-application-dev:prompt-optimize` | Prompt engineering optimization |
-| `/agent-orchestration:multi-agent-optimize` | Multi-agent optimization |
-| `/agent-orchestration:improve-agent` | Agent improvement workflows |
+| `/llm-application-dev:langchain-agent` | LangChainエージェント開発 |
+| `/llm-application-dev:ai-assistant` | AIアシスタントの実装 |
+| `/llm-application-dev:prompt-optimize` | プロンプトエンジニアリングの最適化 |
+| `/agent-orchestration:multi-agent-optimize` | マルチエージェントの最適化 |
+| `/agent-orchestration:improve-agent` | エージェント改善ワークフロー |
 
-### Testing & Performance
+### テスト・パフォーマンス
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/performance-testing-review:ai-review` | Performance analysis |
-| `/application-performance:performance-optimization` | App optimization |
+| `/performance-testing-review:ai-review` | パフォーマンス分析 |
+| `/application-performance:performance-optimization` | アプリの最適化 |
 
-### Team Collaboration
+### チームコラボレーション
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/team-collaboration:issue` | Issue management automation |
-| `/team-collaboration:standup-notes` | Standup notes generation |
+| `/team-collaboration:issue` | 課題管理の自動化 |
+| `/team-collaboration:standup-notes` | スタンドアップノートの生成 |
 
-### Accessibility
+### アクセシビリティ
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/accessibility-compliance:accessibility-audit` | WCAG compliance auditing |
+| `/accessibility-compliance:accessibility-audit` | WCAGコンプライアンス監査 |
 
-### API Development
+### API開発
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/api-testing-observability:api-mock` | API mocking and testing |
+| `/api-testing-observability:api-mock` | APIモックとテスト |
 
-### Context Management
+### コンテキスト管理
 
-| Command | Description |
+| コマンド | 説明 |
 |---------|-------------|
-| `/context-management:context-save` | Save conversation context |
-| `/context-management:context-restore` | Restore previous context |
+| `/context-management:context-save` | 会話コンテキストの保存 |
+| `/context-management:context-restore` | 以前のコンテキストの復元 |
 
-## Multi-Agent Workflow Examples
+## マルチエージェントワークフローの例
 
-Plugins provide pre-configured multi-agent workflows accessible via slash commands.
+プラグインは、スラッシュコマンドでアクセス可能な事前設定されたマルチエージェントワークフローを提供します。
 
-### Full-Stack Development
+### フルスタック開発
 
 ```bash
-# Command-based workflow invocation
+# コマンドベースのワークフロー呼び出し
 /full-stack-orchestration:full-stack-feature "user dashboard with real-time analytics"
 
-# Natural language alternative
+# 自然言語による代替方法
 "Implement user dashboard with real-time analytics"
 ```
 
-**Orchestration:** backend-architect → database-architect → frontend-developer → test-automator → security-auditor → deployment-engineer → observability-engineer
+**オーケストレーション:** backend-architect → database-architect → frontend-developer → test-automator → security-auditor → deployment-engineer → observability-engineer
 
-**What happens:**
+**実行内容:**
 
-1. Database schema design with migrations
-2. Backend API implementation (REST/GraphQL)
-3. Frontend components with state management
-4. Comprehensive test suite (unit/integration/E2E)
-5. Security audit and hardening
-6. CI/CD pipeline setup with feature flags
-7. Observability and monitoring configuration
+1. マイグレーション付きデータベーススキーマ設計
+2. バックエンドAPI実装（REST/GraphQL）
+3. 状態管理を備えたフロントエンドコンポーネント
+4. 包括的なテストスイート（ユニット/統合/E2E）
+5. セキュリティ監査と強化
+6. フィーチャーフラグ付きCI/CDパイプラインのセットアップ
+7. 可観測性と監視の設定
 
-### Security Hardening
+### セキュリティ強化
 
 ```bash
-# Comprehensive security assessment and remediation
+# 包括的なセキュリティ評価と修復
 /security-scanning:security-hardening --level comprehensive
 
-# Natural language alternative
+# 自然言語による代替方法
 "Perform security audit and implement OWASP best practices"
 ```
 
-**Orchestration:** security-auditor → backend-security-coder → frontend-security-coder → mobile-security-coder → test-automator
+**オーケストレーション:** security-auditor → backend-security-coder → frontend-security-coder → mobile-security-coder → test-automator
 
-### Data/ML Pipeline
+### データ/MLパイプライン
 
 ```bash
-# ML feature development with production deployment
+# 本番デプロイメント付きML機能開発
 /machine-learning-ops:ml-pipeline "customer churn prediction model"
 
-# Natural language alternative
+# 自然言語による代替方法
 "Build customer churn prediction model with deployment"
 ```
 
-**Orchestration:** data-scientist → data-engineer → ml-engineer → mlops-engineer → performance-engineer
+**オーケストレーション:** data-scientist → data-engineer → ml-engineer → mlops-engineer → performance-engineer
 
-### Incident Response
+### インシデント対応
 
 ```bash
-# Smart debugging with root cause analysis
+# 根本原因分析を伴うスマートデバッグ
 /incident-response:smart-fix "production memory leak in payment service"
 
-# Natural language alternative
+# 自然言語による代替方法
 "Debug production memory leak and create runbook"
 ```
 
-**Orchestration:** incident-responder → devops-troubleshooter → debugger → error-detective → observability-engineer
+**オーケストレーション:** incident-responder → devops-troubleshooter → debugger → error-detective → observability-engineer
 
-## Command Arguments and Options
+## コマンド引数とオプション
 
-Many slash commands support arguments for precise control:
+多くのスラッシュコマンドは、正確な制御のための引数をサポートしています：
 
 ```bash
-# Test generation for specific files
+# 特定ファイルのテスト生成
 /unit-testing:test-generate src/api/users.py
 
-# Feature development with methodology specification
+# 方法論指定付き機能開発
 /backend-development:feature-development OAuth2 integration with social login
 
-# Security dependency scanning
+# セキュリティ依存関係スキャン
 /security-scanning:security-dependencies
 
-# Component scaffolding
+# コンポーネントのスキャフォールディング
 /frontend-mobile-development:component-scaffold UserProfile component with hooks
 
-# TDD workflow cycle
+# TDDワークフローサイクル
 /tdd-workflows:tdd-red User can reset password
 /tdd-workflows:tdd-green
 /tdd-workflows:tdd-refactor
 
-# Smart debugging
+# スマートデバッグ
 /debugging-toolkit:smart-debug memory leak in checkout flow
 
-# Python project scaffolding
+# Pythonプロジェクトのスキャフォールディング
 /python-development:python-scaffold fastapi-microservice
 ```
 
-## Combining Natural Language and Commands
+## 自然言語とコマンドの組み合わせ
 
-You can mix both approaches for optimal flexibility:
+最適な柔軟性のために、両方のアプローチを組み合わせることができます：
 
 ```
-# Start with a command for structured workflow
+# 構造化されたワークフローのためにコマンドで開始
 /full-stack-orchestration:full-stack-feature "payment processing"
 
-# Then provide natural language guidance
+# 次に自然言語でガイダンスを提供
 "Ensure PCI-DSS compliance and integrate with Stripe"
 "Add retry logic for failed transactions"
 "Set up fraud detection rules"
 ```
 
-## Best Practices
+## ベストプラクティス
 
-### When to Use Slash Commands
+### スラッシュコマンドを使用する場合
 
-- **Structured workflows** - Multi-step processes with clear phases
-- **Repetitive tasks** - Operations you perform frequently
-- **Precise control** - When you need specific parameters
-- **Discovery** - Exploring available functionality
+- **構造化されたワークフロー** - 明確なフェーズを持つ複数ステップのプロセス
+- **反復タスク** - 頻繁に実行する操作
+- **正確な制御** - 特定のパラメータが必要な場合
+- **発見** - 利用可能な機能を探索する場合
 
-### When to Use Natural Language
+### 自然言語を使用する場合
 
-- **Exploratory work** - When you're not sure which tool to use
-- **Complex reasoning** - When Claude needs to coordinate multiple agents
-- **Contextual decisions** - When the right approach depends on the situation
-- **Ad-hoc tasks** - One-off operations that don't fit a command
+- **探索的作業** - どのツールを使用すべきかわからない場合
+- **複雑な推論** - Claudeが複数のエージェントを調整する必要がある場合
+- **文脈に基づく決定** - 適切なアプローチが状況に依存する場合
+- **アドホックタスク** - コマンドに適合しない一回限りの操作
 
-### Workflow Composition
+### ワークフローの構成
 
-Compose multiple plugins for complex scenarios:
+複雑なシナリオのために複数のプラグインを組み合わせる：
 
 ```bash
-# 1. Start with feature development
+# 1. 機能開発から始める
 /backend-development:feature-development payment processing API
 
-# 2. Add security hardening
+# 2. セキュリティ強化を追加
 /security-scanning:security-hardening
 
-# 3. Generate comprehensive tests
+# 3. 包括的なテストを生成
 /unit-testing:test-generate
 
-# 4. Review the implementation
+# 4. 実装をレビュー
 /code-review-ai:ai-review
 
-# 5. Set up CI/CD
+# 5. CI/CDをセットアップ
 /cicd-automation:workflow-automate
 
-# 6. Add monitoring
+# 6. 監視を追加
 /observability-monitoring:monitor-setup
 ```
 
-## Agent Skills Integration
+## エージェントスキルの統合
 
-Agent Skills work alongside commands to provide deep expertise:
+エージェントスキルはコマンドと連携して深い専門知識を提供します：
 
 ```
 User: "Set up FastAPI project with async patterns"
-→ Activates: fastapi-templates skill
-→ Invokes: /python-development:python-scaffold
-→ Result: Production-ready FastAPI project with best practices
+→ 有効化: fastapi-templates skill
+→ 呼び出し: /python-development:python-scaffold
+→ 結果: ベストプラクティスを備えた本番環境対応のFastAPIプロジェクト
 
 User: "Implement Kubernetes deployment with Helm"
-→ Activates: helm-chart-scaffolding, k8s-manifest-generator skills
-→ Guides: kubernetes-architect agent
-→ Result: Production-grade K8s manifests with Helm charts
+→ 有効化: helm-chart-scaffolding, k8s-manifest-generator skills
+→ ガイド: kubernetes-architect agent
+→ 結果: Helmチャート付きの本番グレードK8sマニフェスト
 ```
 
-See [Agent Skills](./agent-skills.md) for details on the 47 specialized skills.
+47の専門スキルの詳細については、[Agent Skills](./agent-skills.md)を参照してください。
 
-## See Also
+## 関連項目
 
-- [Agent Skills](./agent-skills.md) - Specialized knowledge packages
-- [Agent Reference](./agents.md) - Complete agent catalog
-- [Plugin Reference](./plugins.md) - All 63 plugins
-- [Architecture](./architecture.md) - Design principles
+- [Agent Skills](./agent-skills.md) - 専門知識パッケージ
+- [Agent Reference](./agents.md) - 完全なエージェントカタログ
+- [Plugin Reference](./plugins.md) - 全63プラグイン
+- [Architecture](./architecture.md) - 設計原則

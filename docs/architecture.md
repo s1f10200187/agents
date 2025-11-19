@@ -1,78 +1,78 @@
-# Architecture & Design Principles
+# アーキテクチャと設計原則
 
-This marketplace follows industry best practices with a focus on granularity, composability, and minimal token usage.
+このマーケットプレイスは、粒度、組み合わせ可能性、最小限のトークン使用に焦点を当てた業界のベストプラクティスに従っています。
 
-## Core Philosophy
+## コア哲学
 
-### Single Responsibility Principle
+### 単一責任の原則
 
-- Each plugin does **one thing well** (Unix philosophy)
-- Clear, focused purposes (describable in 5-10 words)
-- Average plugin size: **3.4 components** (follows Anthropic's 2-8 pattern)
-- **Zero bloated plugins** - all plugins focused and purposeful
+- 各プラグインは**一つのことをうまく実行**（Unix哲学）
+- 明確で焦点を絞った目的（5〜10語で説明可能）
+- 平均プラグインサイズ：**3.4コンポーネント**（Anthropicの2-8パターンに従う）
+- **肥大化したプラグインはゼロ** - すべてのプラグインが焦点を絞り、目的を持っている
 
-### Composability Over Bundling
+### バンドルよりも組み合わせ可能性
 
-- Mix and match plugins based on needs
-- Workflow orchestrators compose focused plugins
-- No forced feature bundling
-- Clear boundaries between plugins
+- ニーズに基づいてプラグインを組み合わせて使用
+- ワークフローオーケストレーターが焦点を絞ったプラグインを構成
+- 強制的な機能バンドルなし
+- プラグイン間の明確な境界
 
-### Context Efficiency
+### コンテキスト効率
 
-- Smaller tools = faster processing
-- Better fit in LLM context windows
-- More accurate, focused responses
-- Install only what you need
+- 小さなツール = 高速処理
+- LLMコンテキストウィンドウにより適合
+- より正確で焦点を絞った応答
+- 必要なものだけをインストール
 
-### Maintainability
+### 保守性
 
-- Single-purpose = easier updates
-- Clear boundaries = isolated changes
-- Less duplication = simpler maintenance
-- Isolated dependencies
+- 単一目的 = 更新が容易
+- 明確な境界 = 分離された変更
+- 重複の削減 = シンプルなメンテナンス
+- 分離された依存関係
 
-## Granular Plugin Architecture
+## 粒度の細かいプラグインアーキテクチャ
 
-### Plugin Distribution
+### プラグインの分布
 
-- **63 focused plugins** optimized for specific use cases
-- **23 clear categories** with 1-6 plugins each for easy discovery
-- Organized by domain:
-  - **Development**: 4 plugins (debugging, backend, frontend, multi-platform)
-  - **Security**: 4 plugins (scanning, compliance, backend-api, frontend-mobile)
-  - **Operations**: 4 plugins (incident, diagnostics, distributed, observability)
-  - **Languages**: 7 plugins (Python, JS/TS, systems, JVM, scripting, functional, embedded)
-  - **Infrastructure**: 5 plugins (deployment, validation, K8s, cloud, CI/CD)
-  - And 18 more specialized categories
+- 特定のユースケースに最適化された**63の焦点を絞ったプラグイン**
+- 簡単に発見できるように、各カテゴリに1〜6個のプラグインがある**23の明確なカテゴリ**
+- ドメインごとに整理：
+  - **Development**: 4プラグイン（デバッグ、バックエンド、フロントエンド、マルチプラットフォーム）
+  - **Security**: 4プラグイン（スキャン、コンプライアンス、バックエンドAPI、フロントエンドモバイル）
+  - **Operations**: 4プラグイン（インシデント、診断、分散、オブザーバビリティ）
+  - **Languages**: 7プラグイン（Python、JS/TS、システム、JVM、スクリプト、関数型、組み込み）
+  - **Infrastructure**: 5プラグイン（デプロイメント、検証、K8s、クラウド、CI/CD）
+  - その他18の専門カテゴリ
 
-### Component Breakdown
+### コンポーネントの内訳
 
-**85 Specialized Agents**
-- Domain experts with deep knowledge
-- Organized across architecture, languages, infrastructure, quality, data/AI, documentation, business, and SEO
-- Model-optimized (47 Haiku, 97 Sonnet) for performance and cost
+**85の専門エージェント**
+- 深い知識を持つドメインエキスパート
+- アーキテクチャ、言語、インフラストラクチャ、品質、データ/AI、ドキュメント、ビジネス、SEOにわたって整理
+- パフォーマンスとコストのためにモデル最適化（47 Haiku、97 Sonnet）
 
-**15 Workflow Orchestrators**
-- Multi-agent coordination systems
-- Complex operations like full-stack development, security hardening, ML pipelines, incident response
-- Pre-configured agent workflows
+**15のワークフローオーケストレーター**
+- マルチエージェント調整システム
+- フルスタック開発、セキュリティ強化、MLパイプライン、インシデント対応などの複雑な操作
+- 事前設定されたエージェントワークフロー
 
-**44 Development Tools**
-- Optimized utilities including:
-  - Project scaffolding (Python, TypeScript, Rust)
-  - Security scanning (SAST, dependency audit, XSS)
-  - Test generation (pytest, Jest)
-  - Component scaffolding (React, React Native)
-  - Infrastructure setup (Terraform, Kubernetes)
+**44の開発ツール**
+- 最適化されたユーティリティ：
+  - プロジェクトスキャフォールディング（Python、TypeScript、Rust）
+  - セキュリティスキャン（SAST、依存関係監査、XSS）
+  - テスト生成（pytest、Jest）
+  - コンポーネントスキャフォールディング（React、React Native）
+  - インフラストラクチャセットアップ（Terraform、Kubernetes）
 
-**47 Agent Skills**
-- Modular knowledge packages
-- Progressive disclosure architecture
-- Domain-specific expertise across 14 plugins
-- Spec-compliant (Anthropic Agent Skills Specification)
+**47のエージェントスキル**
+- モジュール式知識パッケージ
+- プログレッシブディスクロージャアーキテクチャ
+- 14プラグインにわたるドメイン固有の専門知識
+- 仕様準拠（Anthropic Agent Skills Specification）
 
-## Repository Structure
+## リポジトリ構造
 
 ```
 claude-agents/
@@ -122,22 +122,22 @@ claude-agents/
 └── README.md                      # Quick start
 ```
 
-## Plugin Structure
+## プラグイン構造
 
-Each plugin contains:
+各プラグインには以下が含まれます：
 
-- **agents/** - Specialized agents for that domain (optional)
-- **commands/** - Tools and workflows specific to that plugin (optional)
-- **skills/** - Modular knowledge packages with progressive disclosure (optional)
+- **agents/** - そのドメインの専門エージェント（オプション）
+- **commands/** - そのプラグインに固有のツールとワークフロー（オプション）
+- **skills/** - プログレッシブディスクロージャを備えたモジュール式知識パッケージ（オプション）
 
-### Minimum Requirements
+### 最小要件
 
-- At least one agent OR one command
-- Clear, focused purpose
-- Proper frontmatter in all files
-- Entry in marketplace.json
+- 少なくとも1つのエージェントまたは1つのコマンド
+- 明確で焦点を絞った目的
+- すべてのファイルに適切なフロントマター
+- marketplace.jsonへのエントリ
 
-### Example Plugin
+### プラグインの例
 
 ```
 plugins/kubernetes-operations/
@@ -152,19 +152,19 @@ plugins/kubernetes-operations/
     └── k8s-security-policies/    # Security policy skill
 ```
 
-## Agent Skills Architecture
+## エージェントスキルアーキテクチャ
 
-### Progressive Disclosure
+### プログレッシブディスクロージャ
 
-Skills use a three-tier architecture for token efficiency:
+スキルは、トークン効率のために3層アーキテクチャを使用します：
 
-1. **Metadata** (Frontmatter): Name and activation criteria (always loaded)
-2. **Instructions**: Core guidance and patterns (loaded when activated)
-3. **Resources**: Examples and templates (loaded on demand)
+1. **メタデータ**（フロントマター）：名前とアクティベーション基準（常に読み込まれる）
+2. **指示**：コアガイダンスとパターン（アクティベート時に読み込まれる）
+3. **リソース**：例とテンプレート（オンデマンドで読み込まれる）
 
-### Specification Compliance
+### 仕様準拠
 
-All skills follow the [Agent Skills Specification](https://github.com/anthropics/skills/blob/main/agent_skills_spec.md):
+すべてのスキルは[Agent Skills Specification](https://github.com/anthropics/skills/blob/main/agent_skills_spec.md)に従います：
 
 ```yaml
 ---
@@ -175,52 +175,52 @@ description: What the skill does. Use when [trigger]. # Required: < 1024 chars
 # Skill content with progressive disclosure
 ```
 
-### Benefits
+### メリット
 
-- **Token Efficiency**: Load only relevant knowledge when needed
-- **Specialized Expertise**: Deep domain knowledge without bloat
-- **Clear Activation**: Explicit triggers prevent unwanted invocation
-- **Composability**: Mix and match skills across workflows
-- **Maintainability**: Isolated updates don't affect other skills
+- **トークン効率**：必要な時にのみ関連する知識を読み込む
+- **専門知識**：肥大化することなく深いドメイン知識
+- **明確なアクティベーション**：明示的なトリガーが望ましくない呼び出しを防ぐ
+- **組み合わせ可能性**：ワークフロー全体でスキルを組み合わせて使用
+- **保守性**：分離された更新が他のスキルに影響しない
 
-See [Agent Skills](./agent-skills.md) for complete details on the 47 skills.
+47のスキルの完全な詳細については、[Agent Skills](./agent-skills.md)を参照してください。
 
-## Model Configuration Strategy
+## モデル構成戦略
 
-### Two-Tier Architecture
+### 2層アーキテクチャ
 
-The system uses Claude Opus and Sonnet models strategically:
+システムは戦略的にClaude OpusとSonnetモデルを使用します：
 
 | Model | Count | Use Case |
 |-------|-------|----------|
-| Haiku | 47 agents | Fast execution, deterministic tasks |
-| Sonnet | 97 agents | Complex reasoning, architecture decisions |
+| Haiku | 47 agents | 高速実行、決定論的タスク |
+| Sonnet | 97 agents | 複雑な推論、アーキテクチャの決定 |
 
-### Selection Criteria
+### 選択基準
 
-**Haiku - Fast Execution & Deterministic Tasks**
-- Generating code from well-defined specifications
-- Creating tests following established patterns
-- Writing documentation with clear templates
-- Executing infrastructure operations
-- Performing database query optimization
-- Handling customer support responses
-- Processing SEO optimization tasks
-- Managing deployment pipelines
+**Haiku - 高速実行と決定論的タスク**
+- 明確に定義された仕様からのコード生成
+- 確立されたパターンに従ったテストの作成
+- 明確なテンプレートを使用したドキュメント作成
+- インフラストラクチャ操作の実行
+- データベースクエリの最適化
+- カスタマーサポート応答の処理
+- SEO最適化タスクの処理
+- デプロイメントパイプラインの管理
 
-**Sonnet - Complex Reasoning & Architecture**
-- Designing system architecture
-- Making technology selection decisions
-- Performing security audits
-- Reviewing code for architectural patterns
-- Creating complex AI/ML pipelines
-- Providing language-specific expertise
-- Orchestrating multi-agent workflows
-- Handling business-critical legal/HR matters
+**Sonnet - 複雑な推論とアーキテクチャ**
+- システムアーキテクチャの設計
+- テクノロジー選択の決定
+- セキュリティ監査の実行
+- アーキテクチャパターンのコードレビュー
+- 複雑なAI/MLパイプラインの作成
+- 言語固有の専門知識の提供
+- マルチエージェントワークフローのオーケストレーション
+- ビジネスクリティカルな法務/人事問題の処理
 
-### Hybrid Orchestration
+### ハイブリッドオーケストレーション
 
-Combine models for optimal performance and cost:
+最適なパフォーマンスとコストのためにモデルを組み合わせます：
 
 ```
 Planning Phase (Sonnet) → Execution Phase (Haiku) → Review Phase (Sonnet)
@@ -235,33 +235,33 @@ test-automator (Haiku) creates tests
 code-reviewer (Sonnet) validates architecture
 ```
 
-## Performance & Quality
+## パフォーマンスと品質
 
-### Optimized Token Usage
+### 最適化されたトークン使用
 
-- **Isolated plugins** load only what you need
-- **Granular architecture** reduces unnecessary context
-- **Progressive disclosure** (skills) loads knowledge on demand
-- **Clear boundaries** prevent context pollution
+- **分離されたプラグイン**は必要なものだけを読み込む
+- **粒度の細かいアーキテクチャ**が不要なコンテキストを削減
+- **プログレッシブディスクロージャ**（スキル）がオンデマンドで知識を読み込む
+- **明確な境界**がコンテキストの汚染を防ぐ
 
-### Component Coverage
+### コンポーネントカバレッジ
 
-- **100% agent coverage** - all plugins include at least one agent
-- **100% component availability** - all 85 agents accessible across plugins
-- **Efficient distribution** - 3.4 components per plugin average
+- **100%のエージェントカバレッジ** - すべてのプラグインに少なくとも1つのエージェントが含まれる
+- **100%のコンポーネント可用性** - 85のエージェントすべてがプラグイン全体でアクセス可能
+- **効率的な分布** - プラグインあたり平均3.4コンポーネント
 
-### Discoverability
+### 発見可能性
 
-- **Clear plugin names** convey purpose immediately
-- **Logical categorization** with 23 well-defined categories
-- **Searchable documentation** with cross-references
-- **Easy to find** the right tool for the job
+- **明確なプラグイン名**が目的を即座に伝える
+- 23の明確に定義されたカテゴリによる**論理的な分類**
+- 相互参照付きの**検索可能なドキュメント**
+- **簡単に見つけられる**適切なツール
 
-## Design Patterns
+## 設計パターン
 
-### Pattern 1: Single-Purpose Plugin
+### パターン1：単一目的プラグイン
 
-Each plugin focuses on one domain:
+各プラグインは1つのドメインに焦点を当てています：
 
 ```
 python-development/
@@ -270,15 +270,15 @@ python-development/
 └── skills/           # Python-specific knowledge
 ```
 
-**Benefits:**
-- Clear responsibility
-- Easy to maintain
-- Minimal token usage
-- Composable with other plugins
+**メリット：**
+- 明確な責任
+- メンテナンスが容易
+- 最小限のトークン使用
+- 他のプラグインと組み合わせ可能
 
-### Pattern 2: Workflow Orchestration
+### パターン2：ワークフローオーケストレーション
 
-Orchestrator plugins coordinate multiple agents:
+オーケストレータープラグインは複数のエージェントを調整します：
 
 ```
 full-stack-orchestration/
@@ -286,18 +286,18 @@ full-stack-orchestration/
     └── full-stack-feature.md    # Coordinates 7+ agents
 ```
 
-**Orchestration:**
-1. backend-architect (design API)
-2. database-architect (design schema)
-3. frontend-developer (build UI)
-4. test-automator (create tests)
-5. security-auditor (security review)
-6. deployment-engineer (CI/CD)
-7. observability-engineer (monitoring)
+**オーケストレーション：**
+1. backend-architect（API設計）
+2. database-architect（スキーマ設計）
+3. frontend-developer（UI構築）
+4. test-automator（テスト作成）
+5. security-auditor（セキュリティレビュー）
+6. deployment-engineer（CI/CD）
+7. observability-engineer（モニタリング）
 
-### Pattern 3: Agent + Skill Integration
+### パターン3：エージェント + スキル統合
 
-Agents provide reasoning, skills provide knowledge:
+エージェントは推論を提供し、スキルは知識を提供します：
 
 ```
 User: "Build FastAPI project with async patterns"
@@ -309,9 +309,9 @@ fastapi-templates skill (provides patterns)
 python-scaffold command (generates project)
 ```
 
-### Pattern 4: Multi-Plugin Composition
+### パターン4：マルチプラグイン構成
 
-Complex workflows use multiple plugins:
+複雑なワークフローは複数のプラグインを使用します：
 
 ```
 Feature Development Workflow:
@@ -323,57 +323,57 @@ Feature Development Workflow:
 6. observability-monitoring:monitor-setup
 ```
 
-## Versioning & Updates
+## バージョニングと更新
 
-### Marketplace Updates
+### マーケットプレイスの更新
 
-- Marketplace catalog in `.claude-plugin/marketplace.json`
-- Semantic versioning for plugins
-- Backward compatibility maintained
-- Clear migration guides for breaking changes
+- `.claude-plugin/marketplace.json`のマーケットプレイスカタログ
+- プラグインのセマンティックバージョニング
+- 後方互換性の維持
+- 破壊的変更のための明確な移行ガイド
 
-### Plugin Updates
+### プラグインの更新
 
-- Individual plugin updates don't affect others
-- Skills can be updated independently
-- Agents can be added/removed without breaking workflows
-- Commands maintain stable interfaces
+- 個々のプラグインの更新は他のプラグインに影響しない
+- スキルは独立して更新可能
+- エージェントはワークフローを壊すことなく追加/削除可能
+- コマンドは安定したインターフェースを維持
 
-## Contributing Guidelines
+## コントリビューションガイドライン
 
-### Adding a Plugin
+### プラグインの追加
 
-1. Create plugin directory: `plugins/{plugin-name}/`
-2. Add agents and/or commands
-3. Optionally add skills
-4. Update marketplace.json
-5. Document in appropriate category
+1. プラグインディレクトリを作成：`plugins/{plugin-name}/`
+2. エージェントまたはコマンドを追加
+3. オプションでスキルを追加
+4. marketplace.jsonを更新
+5. 適切なカテゴリでドキュメント化
 
-### Adding an Agent
+### エージェントの追加
 
-1. Create `plugins/{plugin-name}/agents/{agent-name}.md`
-2. Add frontmatter (name, description, model)
-3. Write comprehensive system prompt
-4. Update plugin definition
+1. `plugins/{plugin-name}/agents/{agent-name}.md`を作成
+2. フロントマターを追加（名前、説明、モデル）
+3. 包括的なシステムプロンプトを記述
+4. プラグイン定義を更新
 
-### Adding a Skill
+### スキルの追加
 
-1. Create `plugins/{plugin-name}/skills/{skill-name}/SKILL.md`
-2. Add YAML frontmatter (name, description with "Use when")
-3. Write skill content with progressive disclosure
-4. Add to plugin's skills array in marketplace.json
+1. `plugins/{plugin-name}/skills/{skill-name}/SKILL.md`を作成
+2. YAMLフロントマターを追加（名前、「Use when」付きの説明）
+3. プログレッシブディスクロージャを使用してスキルコンテンツを記述
+4. marketplace.jsonのプラグインのスキル配列に追加
 
-### Quality Standards
+### 品質基準
 
-- **Clear naming** - Hyphen-case, descriptive
-- **Focused scope** - Single responsibility
-- **Complete documentation** - What, when, how
-- **Tested functionality** - Verify before committing
-- **Spec compliance** - Follow Anthropic guidelines
+- **明確な命名** - ハイフンケース、説明的
+- **焦点を絞ったスコープ** - 単一責任
+- **完全なドキュメント** - 何を、いつ、どのように
+- **テストされた機能** - コミット前に検証
+- **仕様準拠** - Anthropicのガイドラインに従う
 
-## See Also
+## 関連項目
 
-- [Agent Skills](./agent-skills.md) - Modular knowledge packages
-- [Agent Reference](./agents.md) - Complete agent catalog
-- [Plugin Reference](./plugins.md) - All 63 plugins
-- [Usage Guide](./usage.md) - Commands and workflows
+- [Agent Skills](./agent-skills.md) - モジュール式知識パッケージ
+- [Agent Reference](./agents.md) - 完全なエージェントカタログ
+- [Plugin Reference](./plugins.md) - 全63プラグイン
+- [Usage Guide](./usage.md) - コマンドとワークフロー

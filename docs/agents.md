@@ -1,312 +1,312 @@
-# Agent Reference
+# エージェントリファレンス
 
-Complete reference for all **86 specialized AI agents** organized by category with model assignments.
+カテゴリー別に整理された**86の専門AIエージェント**の完全なリファレンスとモデル割り当て。
 
-## Agent Categories
+## エージェントカテゴリー
 
-### Architecture & System Design
+### アーキテクチャとシステム設計
 
-#### Core Architecture
+#### コアアーキテクチャ
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [backend-architect](../plugins/backend-development/agents/backend-architect.md) | opus | RESTful API design, microservice boundaries, database schemas |
-| [frontend-developer](../plugins/multi-platform-apps/agents/frontend-developer.md) | sonnet | React components, responsive layouts, client-side state management |
-| [graphql-architect](../plugins/backend-development/agents/graphql-architect.md) | opus | GraphQL schemas, resolvers, federation architecture |
-| [architect-reviewer](../plugins/comprehensive-review/agents/architect-review.md) | opus | Architectural consistency analysis and pattern validation |
-| [cloud-architect](../plugins/cloud-infrastructure/agents/cloud-architect.md) | opus | AWS/Azure/GCP infrastructure design and cost optimization |
-| [hybrid-cloud-architect](../plugins/cloud-infrastructure/agents/hybrid-cloud-architect.md) | opus | Multi-cloud strategies across cloud and on-premises environments |
-| [kubernetes-architect](../plugins/kubernetes-operations/agents/kubernetes-architect.md) | opus | Cloud-native infrastructure with Kubernetes and GitOps |
+| [backend-architect](../plugins/backend-development/agents/backend-architect.md) | opus | RESTful API設計、マイクロサービス境界、データベーススキーマ |
+| [frontend-developer](../plugins/multi-platform-apps/agents/frontend-developer.md) | sonnet | Reactコンポーネント、レスポンシブレイアウト、クライアントサイドの状態管理 |
+| [graphql-architect](../plugins/backend-development/agents/graphql-architect.md) | opus | GraphQLスキーマ、リゾルバー、フェデレーションアーキテクチャ |
+| [architect-reviewer](../plugins/comprehensive-review/agents/architect-review.md) | opus | アーキテクチャの一貫性分析とパターン検証 |
+| [cloud-architect](../plugins/cloud-infrastructure/agents/cloud-architect.md) | opus | AWS/Azure/GCPインフラストラクチャ設計とコスト最適化 |
+| [hybrid-cloud-architect](../plugins/cloud-infrastructure/agents/hybrid-cloud-architect.md) | opus | クラウドとオンプレミス環境にまたがるマルチクラウド戦略 |
+| [kubernetes-architect](../plugins/kubernetes-operations/agents/kubernetes-architect.md) | opus | KubernetesとGitOpsを使用したクラウドネイティブインフラストラクチャ |
 
-#### UI/UX & Mobile
+#### UI/UXとモバイル
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [ui-ux-designer](../plugins/multi-platform-apps/agents/ui-ux-designer.md) | sonnet | Interface design, wireframes, design systems |
-| [ui-visual-validator](../plugins/accessibility-compliance/agents/ui-visual-validator.md) | sonnet | Visual regression testing and UI verification |
-| [mobile-developer](../plugins/multi-platform-apps/agents/mobile-developer.md) | sonnet | React Native and Flutter application development |
-| [ios-developer](../plugins/multi-platform-apps/agents/ios-developer.md) | sonnet | Native iOS development with Swift/SwiftUI |
-| [flutter-expert](../plugins/multi-platform-apps/agents/flutter-expert.md) | sonnet | Advanced Flutter development with state management |
+| [ui-ux-designer](../plugins/multi-platform-apps/agents/ui-ux-designer.md) | sonnet | インターフェース設計、ワイヤーフレーム、デザインシステム |
+| [ui-visual-validator](../plugins/accessibility-compliance/agents/ui-visual-validator.md) | sonnet | ビジュアルリグレッションテストとUI検証 |
+| [mobile-developer](../plugins/multi-platform-apps/agents/mobile-developer.md) | sonnet | React NativeとFlutterアプリケーション開発 |
+| [ios-developer](../plugins/multi-platform-apps/agents/ios-developer.md) | sonnet | Swift/SwiftUIを使用したネイティブiOS開発 |
+| [flutter-expert](../plugins/multi-platform-apps/agents/flutter-expert.md) | sonnet | 状態管理を使用した高度なFlutter開発 |
 
-### Programming Languages
+### プログラミング言語
 
-#### Systems & Low-Level
+#### システムと低レベル
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [c-pro](../plugins/systems-programming/agents/c-pro.md) | sonnet | System programming with memory management and OS interfaces |
-| [cpp-pro](../plugins/systems-programming/agents/cpp-pro.md) | sonnet | Modern C++ with RAII, smart pointers, STL algorithms |
-| [rust-pro](../plugins/systems-programming/agents/rust-pro.md) | sonnet | Memory-safe systems programming with ownership patterns |
-| [golang-pro](../plugins/systems-programming/agents/golang-pro.md) | sonnet | Concurrent programming with goroutines and channels |
+| [c-pro](../plugins/systems-programming/agents/c-pro.md) | sonnet | メモリ管理とOSインターフェースを使用したシステムプログラミング |
+| [cpp-pro](../plugins/systems-programming/agents/cpp-pro.md) | sonnet | RAII、スマートポインター、STLアルゴリズムを使用したモダンC++ |
+| [rust-pro](../plugins/systems-programming/agents/rust-pro.md) | sonnet | 所有権パターンを使用したメモリセーフなシステムプログラミング |
+| [golang-pro](../plugins/systems-programming/agents/golang-pro.md) | sonnet | ゴルーチンとチャネルを使用した並行プログラミング |
 
-#### Web & Application
+#### Webとアプリケーション
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [javascript-pro](../plugins/javascript-typescript/agents/javascript-pro.md) | sonnet | Modern JavaScript with ES6+, async patterns, Node.js |
-| [typescript-pro](../plugins/javascript-typescript/agents/typescript-pro.md) | sonnet | Advanced TypeScript with type systems and generics |
-| [python-pro](../plugins/python-development/agents/python-pro.md) | sonnet | Python development with advanced features and optimization |
-| [temporal-python-pro](../plugins/backend-development/agents/temporal-python-pro.md) | sonnet | Temporal workflow orchestration with Python SDK, durable workflows, saga patterns |
-| [ruby-pro](../plugins/web-scripting/agents/ruby-pro.md) | sonnet | Ruby with metaprogramming, Rails patterns, gem development |
-| [php-pro](../plugins/web-scripting/agents/php-pro.md) | sonnet | Modern PHP with frameworks and performance optimization |
+| [javascript-pro](../plugins/javascript-typescript/agents/javascript-pro.md) | sonnet | ES6+、非同期パターン、Node.jsを使用したモダンJavaScript |
+| [typescript-pro](../plugins/javascript-typescript/agents/typescript-pro.md) | sonnet | 型システムとジェネリクスを使用した高度なTypeScript |
+| [python-pro](../plugins/python-development/agents/python-pro.md) | sonnet | 高度な機能と最適化を使用したPython開発 |
+| [temporal-python-pro](../plugins/backend-development/agents/temporal-python-pro.md) | sonnet | Python SDK、永続的ワークフロー、Sagaパターンを使用したTemporalワークフローオーケストレーション |
+| [ruby-pro](../plugins/web-scripting/agents/ruby-pro.md) | sonnet | メタプログラミング、Railsパターン、gem開発を使用したRuby |
+| [php-pro](../plugins/web-scripting/agents/php-pro.md) | sonnet | フレームワークとパフォーマンス最適化を使用したモダンPHP |
 
-#### Enterprise & JVM
+#### エンタープライズとJVM
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [java-pro](../plugins/jvm-languages/agents/java-pro.md) | sonnet | Modern Java with streams, concurrency, JVM optimization |
-| [scala-pro](../plugins/jvm-languages/agents/scala-pro.md) | sonnet | Enterprise Scala with functional programming and distributed systems |
-| [csharp-pro](../plugins/jvm-languages/agents/csharp-pro.md) | sonnet | C# development with .NET frameworks and patterns |
+| [java-pro](../plugins/jvm-languages/agents/java-pro.md) | sonnet | ストリーム、並行処理、JVM最適化を使用したモダンJava |
+| [scala-pro](../plugins/jvm-languages/agents/scala-pro.md) | sonnet | 関数型プログラミングと分散システムを使用したエンタープライズScala |
+| [csharp-pro](../plugins/jvm-languages/agents/csharp-pro.md) | sonnet | .NETフレームワークとパターンを使用したC#開発 |
 
-#### Specialized Platforms
+#### 特殊プラットフォーム
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [elixir-pro](../plugins/functional-programming/agents/elixir-pro.md) | sonnet | Elixir with OTP patterns and Phoenix frameworks |
-| [django-pro](../plugins/api-scaffolding/agents/django-pro.md) | sonnet | Django development with ORM and async views |
-| [fastapi-pro](../plugins/api-scaffolding/agents/fastapi-pro.md) | sonnet | FastAPI with async patterns and Pydantic |
-| [unity-developer](../plugins/game-development/agents/unity-developer.md) | sonnet | Unity game development and optimization |
-| [minecraft-bukkit-pro](../plugins/game-development/agents/minecraft-bukkit-pro.md) | sonnet | Minecraft server plugin development |
-| [sql-pro](../plugins/database-design/agents/sql-pro.md) | sonnet | Complex SQL queries and database optimization |
+| [elixir-pro](../plugins/functional-programming/agents/elixir-pro.md) | sonnet | OTPパターンとPhoenixフレームワークを使用したElixir |
+| [django-pro](../plugins/api-scaffolding/agents/django-pro.md) | sonnet | ORMと非同期ビューを使用したDjango開発 |
+| [fastapi-pro](../plugins/api-scaffolding/agents/fastapi-pro.md) | sonnet | 非同期パターンとPydanticを使用したFastAPI |
+| [unity-developer](../plugins/game-development/agents/unity-developer.md) | sonnet | Unityゲーム開発と最適化 |
+| [minecraft-bukkit-pro](../plugins/game-development/agents/minecraft-bukkit-pro.md) | sonnet | Minecraftサーバープラグイン開発 |
+| [sql-pro](../plugins/database-design/agents/sql-pro.md) | sonnet | 複雑なSQLクエリとデータベース最適化 |
 
-### Infrastructure & Operations
+### インフラストラクチャと運用
 
-#### DevOps & Deployment
+#### DevOpsとデプロイメント
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [devops-troubleshooter](../plugins/incident-response/agents/devops-troubleshooter.md) | sonnet | Production debugging, log analysis, deployment troubleshooting |
-| [deployment-engineer](../plugins/cloud-infrastructure/agents/deployment-engineer.md) | sonnet | CI/CD pipelines, containerization, cloud deployments |
-| [terraform-specialist](../plugins/cloud-infrastructure/agents/terraform-specialist.md) | sonnet | Infrastructure as Code with Terraform modules and state management |
-| [dx-optimizer](../plugins/team-collaboration/agents/dx-optimizer.md) | sonnet | Developer experience optimization and tooling improvements |
+| [devops-troubleshooter](../plugins/incident-response/agents/devops-troubleshooter.md) | sonnet | 本番環境のデバッグ、ログ分析、デプロイメントのトラブルシューティング |
+| [deployment-engineer](../plugins/cloud-infrastructure/agents/deployment-engineer.md) | sonnet | CI/CDパイプライン、コンテナ化、クラウドデプロイメント |
+| [terraform-specialist](../plugins/cloud-infrastructure/agents/terraform-specialist.md) | sonnet | Terraformモジュールと状態管理を使用したInfrastructure as Code |
+| [dx-optimizer](../plugins/team-collaboration/agents/dx-optimizer.md) | sonnet | 開発者エクスペリエンスの最適化とツーリングの改善 |
 
-#### Database Management
+#### データベース管理
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [database-optimizer](../plugins/observability-monitoring/agents/database-optimizer.md) | sonnet | Query optimization, index design, migration strategies |
-| [database-admin](../plugins/database-migrations/agents/database-admin.md) | sonnet | Database operations, backup, replication, monitoring |
-| [database-architect](../plugins/database-design/agents/database-architect.md) | opus | Database design from scratch, technology selection, schema modeling |
+| [database-optimizer](../plugins/observability-monitoring/agents/database-optimizer.md) | sonnet | クエリ最適化、インデックス設計、マイグレーション戦略 |
+| [database-admin](../plugins/database-migrations/agents/database-admin.md) | sonnet | データベース操作、バックアップ、レプリケーション、モニタリング |
+| [database-architect](../plugins/database-design/agents/database-architect.md) | opus | ゼロからのデータベース設計、技術選定、スキーマモデリング |
 
-#### Incident Response & Network
+#### インシデント対応とネットワーク
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [incident-responder](../plugins/incident-response/agents/incident-responder.md) | opus | Production incident management and resolution |
-| [network-engineer](../plugins/observability-monitoring/agents/network-engineer.md) | sonnet | Network debugging, load balancing, traffic analysis |
+| [incident-responder](../plugins/incident-response/agents/incident-responder.md) | opus | 本番環境のインシデント管理と解決 |
+| [network-engineer](../plugins/observability-monitoring/agents/network-engineer.md) | sonnet | ネットワークデバッグ、ロードバランシング、トラフィック分析 |
 
-### Quality Assurance & Security
+### 品質保証とセキュリティ
 
-#### Code Quality & Review
+#### コード品質とレビュー
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [code-reviewer](../plugins/comprehensive-review/agents/code-reviewer.md) | opus | Code review with security focus and production reliability |
-| [security-auditor](../plugins/comprehensive-review/agents/security-auditor.md) | opus | Vulnerability assessment and OWASP compliance |
-| [backend-security-coder](../plugins/data-validation-suite/agents/backend-security-coder.md) | opus | Secure backend coding practices, API security implementation |
-| [frontend-security-coder](../plugins/frontend-mobile-security/agents/frontend-security-coder.md) | opus | XSS prevention, CSP implementation, client-side security |
-| [mobile-security-coder](../plugins/frontend-mobile-security/agents/mobile-security-coder.md) | opus | Mobile security patterns, WebView security, biometric auth |
+| [code-reviewer](../plugins/comprehensive-review/agents/code-reviewer.md) | opus | セキュリティに重点を置いたコードレビューと本番環境の信頼性 |
+| [security-auditor](../plugins/comprehensive-review/agents/security-auditor.md) | opus | 脆弱性評価とOWASP準拠 |
+| [backend-security-coder](../plugins/data-validation-suite/agents/backend-security-coder.md) | opus | 安全なバックエンドコーディングプラクティス、APIセキュリティ実装 |
+| [frontend-security-coder](../plugins/frontend-mobile-security/agents/frontend-security-coder.md) | opus | XSS防止、CSP実装、クライアントサイドセキュリティ |
+| [mobile-security-coder](../plugins/frontend-mobile-security/agents/mobile-security-coder.md) | opus | モバイルセキュリティパターン、WebViewセキュリティ、生体認証 |
 
-#### Testing & Debugging
+#### テストとデバッグ
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [test-automator](../plugins/codebase-cleanup/agents/test-automator.md) | sonnet | Comprehensive test suite creation (unit, integration, e2e) |
-| [tdd-orchestrator](../plugins/backend-development/agents/tdd-orchestrator.md) | sonnet | Test-Driven Development methodology guidance |
-| [debugger](../plugins/error-debugging/agents/debugger.md) | sonnet | Error resolution and test failure analysis |
-| [error-detective](../plugins/error-debugging/agents/error-detective.md) | sonnet | Log analysis and error pattern recognition |
+| [test-automator](../plugins/codebase-cleanup/agents/test-automator.md) | sonnet | 包括的なテストスイート作成（ユニット、統合、e2e） |
+| [tdd-orchestrator](../plugins/backend-development/agents/tdd-orchestrator.md) | sonnet | テスト駆動開発の方法論ガイダンス |
+| [debugger](../plugins/error-debugging/agents/debugger.md) | sonnet | エラー解決とテスト失敗分析 |
+| [error-detective](../plugins/error-debugging/agents/error-detective.md) | sonnet | ログ分析とエラーパターン認識 |
 
-#### Performance & Observability
+#### パフォーマンスと可観測性
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [performance-engineer](../plugins/observability-monitoring/agents/performance-engineer.md) | opus | Application profiling and optimization |
-| [observability-engineer](../plugins/observability-monitoring/agents/observability-engineer.md) | opus | Production monitoring, distributed tracing, SLI/SLO management |
-| [search-specialist](../plugins/content-marketing/agents/search-specialist.md) | haiku | Advanced web research and information synthesis |
+| [performance-engineer](../plugins/observability-monitoring/agents/performance-engineer.md) | opus | アプリケーションのプロファイリングと最適化 |
+| [observability-engineer](../plugins/observability-monitoring/agents/observability-engineer.md) | opus | 本番環境モニタリング、分散トレーシング、SLI/SLO管理 |
+| [search-specialist](../plugins/content-marketing/agents/search-specialist.md) | haiku | 高度なウェブリサーチと情報統合 |
 
-### Data & AI
+### データとAI
 
-#### Data Engineering & Analytics
+#### データエンジニアリングと分析
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [data-scientist](../plugins/machine-learning-ops/agents/data-scientist.md) | opus | Data analysis, SQL queries, BigQuery operations |
-| [data-engineer](../plugins/data-engineering/agents/data-engineer.md) | sonnet | ETL pipelines, data warehouses, streaming architectures |
+| [data-scientist](../plugins/machine-learning-ops/agents/data-scientist.md) | opus | データ分析、SQLクエリ、BigQuery操作 |
+| [data-engineer](../plugins/data-engineering/agents/data-engineer.md) | sonnet | ETLパイプライン、データウェアハウス、ストリーミングアーキテクチャ |
 
-#### Machine Learning & AI
+#### 機械学習とAI
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [ai-engineer](../plugins/llm-application-dev/agents/ai-engineer.md) | opus | LLM applications, RAG systems, prompt pipelines |
-| [ml-engineer](../plugins/machine-learning-ops/agents/ml-engineer.md) | opus | ML pipelines, model serving, feature engineering |
-| [mlops-engineer](../plugins/machine-learning-ops/agents/mlops-engineer.md) | opus | ML infrastructure, experiment tracking, model registries |
-| [prompt-engineer](../plugins/llm-application-dev/agents/prompt-engineer.md) | opus | LLM prompt optimization and engineering |
+| [ai-engineer](../plugins/llm-application-dev/agents/ai-engineer.md) | opus | LLMアプリケーション、RAGシステム、プロンプトパイプライン |
+| [ml-engineer](../plugins/machine-learning-ops/agents/ml-engineer.md) | opus | MLパイプライン、モデル提供、特徴エンジニアリング |
+| [mlops-engineer](../plugins/machine-learning-ops/agents/mlops-engineer.md) | opus | MLインフラストラクチャ、実験追跡、モデルレジストリ |
+| [prompt-engineer](../plugins/llm-application-dev/agents/prompt-engineer.md) | opus | LLMプロンプト最適化とエンジニアリング |
 
-### Documentation & Technical Writing
+### ドキュメントとテクニカルライティング
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [docs-architect](../plugins/code-documentation/agents/docs-architect.md) | opus | Comprehensive technical documentation generation |
-| [api-documenter](../plugins/api-testing-observability/agents/api-documenter.md) | sonnet | OpenAPI/Swagger specifications and developer docs |
-| [reference-builder](../plugins/documentation-generation/agents/reference-builder.md) | haiku | Technical references and API documentation |
-| [tutorial-engineer](../plugins/code-documentation/agents/tutorial-engineer.md) | sonnet | Step-by-step tutorials and educational content |
-| [mermaid-expert](../plugins/documentation-generation/agents/mermaid-expert.md) | sonnet | Diagram creation (flowcharts, sequences, ERDs) |
+| [docs-architect](../plugins/code-documentation/agents/docs-architect.md) | opus | 包括的な技術ドキュメント生成 |
+| [api-documenter](../plugins/api-testing-observability/agents/api-documenter.md) | sonnet | OpenAPI/Swagger仕様と開発者ドキュメント |
+| [reference-builder](../plugins/documentation-generation/agents/reference-builder.md) | haiku | 技術リファレンスとAPIドキュメント |
+| [tutorial-engineer](../plugins/code-documentation/agents/tutorial-engineer.md) | sonnet | ステップバイステップのチュートリアルと教育コンテンツ |
+| [mermaid-expert](../plugins/documentation-generation/agents/mermaid-expert.md) | sonnet | 図の作成（フローチャート、シーケンス、ERD） |
 
-### Business & Operations
+### ビジネスと運用
 
-#### Business Analysis & Finance
+#### ビジネス分析と財務
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [business-analyst](../plugins/business-analytics/agents/business-analyst.md) | sonnet | Metrics analysis, reporting, KPI tracking |
-| [quant-analyst](../plugins/quantitative-trading/agents/quant-analyst.md) | opus | Financial modeling, trading strategies, market analysis |
-| [risk-manager](../plugins/quantitative-trading/agents/risk-manager.md) | sonnet | Portfolio risk monitoring and management |
+| [business-analyst](../plugins/business-analytics/agents/business-analyst.md) | sonnet | メトリクス分析、レポート作成、KPI追跡 |
+| [quant-analyst](../plugins/quantitative-trading/agents/quant-analyst.md) | opus | 財務モデリング、取引戦略、市場分析 |
+| [risk-manager](../plugins/quantitative-trading/agents/risk-manager.md) | sonnet | ポートフォリオリスクモニタリングと管理 |
 
-#### Marketing & Sales
+#### マーケティングと営業
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [content-marketer](../plugins/content-marketing/agents/content-marketer.md) | sonnet | Blog posts, social media, email campaigns |
-| [sales-automator](../plugins/customer-sales-automation/agents/sales-automator.md) | haiku | Cold emails, follow-ups, proposal generation |
+| [content-marketer](../plugins/content-marketing/agents/content-marketer.md) | sonnet | ブログ投稿、ソーシャルメディア、メールキャンペーン |
+| [sales-automator](../plugins/customer-sales-automation/agents/sales-automator.md) | haiku | コールドメール、フォローアップ、提案書生成 |
 
-#### Support & Legal
+#### サポートと法務
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [customer-support](../plugins/customer-sales-automation/agents/customer-support.md) | sonnet | Support tickets, FAQ responses, customer communication |
-| [hr-pro](../plugins/hr-legal-compliance/agents/hr-pro.md) | opus | HR operations, policies, employee relations |
-| [legal-advisor](../plugins/hr-legal-compliance/agents/legal-advisor.md) | opus | Privacy policies, terms of service, legal documentation |
+| [customer-support](../plugins/customer-sales-automation/agents/customer-support.md) | sonnet | サポートチケット、FAQレスポンス、顧客コミュニケーション |
+| [hr-pro](../plugins/hr-legal-compliance/agents/hr-pro.md) | opus | HR業務、ポリシー、従業員関係 |
+| [legal-advisor](../plugins/hr-legal-compliance/agents/legal-advisor.md) | opus | プライバシーポリシー、利用規約、法的文書 |
 
-### SEO & Content Optimization
+### SEOとコンテンツ最適化
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [seo-content-auditor](../plugins/seo-content-creation/agents/seo-content-auditor.md) | sonnet | Content quality analysis, E-E-A-T signals assessment |
-| [seo-meta-optimizer](../plugins/seo-technical-optimization/agents/seo-meta-optimizer.md) | haiku | Meta title and description optimization |
-| [seo-keyword-strategist](../plugins/seo-technical-optimization/agents/seo-keyword-strategist.md) | haiku | Keyword analysis and semantic variations |
-| [seo-structure-architect](../plugins/seo-technical-optimization/agents/seo-structure-architect.md) | haiku | Content structure and schema markup |
-| [seo-snippet-hunter](../plugins/seo-technical-optimization/agents/seo-snippet-hunter.md) | haiku | Featured snippet formatting |
-| [seo-content-refresher](../plugins/seo-analysis-monitoring/agents/seo-content-refresher.md) | haiku | Content freshness analysis |
-| [seo-cannibalization-detector](../plugins/seo-analysis-monitoring/agents/seo-cannibalization-detector.md) | haiku | Keyword overlap detection |
-| [seo-authority-builder](../plugins/seo-analysis-monitoring/agents/seo-authority-builder.md) | sonnet | E-E-A-T signal analysis |
-| [seo-content-writer](../plugins/seo-content-creation/agents/seo-content-writer.md) | sonnet | SEO-optimized content creation |
-| [seo-content-planner](../plugins/seo-content-creation/agents/seo-content-planner.md) | haiku | Content planning and topic clusters |
+| [seo-content-auditor](../plugins/seo-content-creation/agents/seo-content-auditor.md) | sonnet | コンテンツ品質分析、E-E-A-Tシグナル評価 |
+| [seo-meta-optimizer](../plugins/seo-technical-optimization/agents/seo-meta-optimizer.md) | haiku | メタタイトルとディスクリプションの最適化 |
+| [seo-keyword-strategist](../plugins/seo-technical-optimization/agents/seo-keyword-strategist.md) | haiku | キーワード分析とセマンティックバリエーション |
+| [seo-structure-architect](../plugins/seo-technical-optimization/agents/seo-structure-architect.md) | haiku | コンテンツ構造とスキーママークアップ |
+| [seo-snippet-hunter](../plugins/seo-technical-optimization/agents/seo-snippet-hunter.md) | haiku | 注目スニペットのフォーマット |
+| [seo-content-refresher](../plugins/seo-analysis-monitoring/agents/seo-content-refresher.md) | haiku | コンテンツの鮮度分析 |
+| [seo-cannibalization-detector](../plugins/seo-analysis-monitoring/agents/seo-cannibalization-detector.md) | haiku | キーワード重複検出 |
+| [seo-authority-builder](../plugins/seo-analysis-monitoring/agents/seo-authority-builder.md) | sonnet | E-E-A-Tシグナル分析 |
+| [seo-content-writer](../plugins/seo-content-creation/agents/seo-content-writer.md) | sonnet | SEO最適化コンテンツ作成 |
+| [seo-content-planner](../plugins/seo-content-creation/agents/seo-content-planner.md) | haiku | コンテンツ計画とトピッククラスター |
 
-### Specialized Domains
+### 特殊ドメイン
 
-| Agent | Model | Description |
+| エージェント | モデル | 説明 |
 |-------|-------|-------------|
-| [arm-cortex-expert](../plugins/arm-cortex-microcontrollers/agents/arm-cortex-expert.md) | sonnet | ARM Cortex-M firmware and peripheral driver development |
-| [blockchain-developer](../plugins/blockchain-web3/agents/blockchain-developer.md) | sonnet | Web3 apps, smart contracts, DeFi protocols |
-| [payment-integration](../plugins/payment-processing/agents/payment-integration.md) | sonnet | Payment processor integration (Stripe, PayPal) |
-| [legacy-modernizer](../plugins/framework-migration/agents/legacy-modernizer.md) | sonnet | Legacy code refactoring and modernization |
-| [context-manager](../plugins/agent-orchestration/agents/context-manager.md) | haiku | Multi-agent context management |
+| [arm-cortex-expert](../plugins/arm-cortex-microcontrollers/agents/arm-cortex-expert.md) | sonnet | ARM Cortex-Mファームウェアと周辺機器ドライバー開発 |
+| [blockchain-developer](../plugins/blockchain-web3/agents/blockchain-developer.md) | sonnet | Web3アプリ、スマートコントラクト、DeFiプロトコル |
+| [payment-integration](../plugins/payment-processing/agents/payment-integration.md) | sonnet | 決済処理業者統合（Stripe、PayPal） |
+| [legacy-modernizer](../plugins/framework-migration/agents/legacy-modernizer.md) | sonnet | レガシーコードのリファクタリングとモダナイゼーション |
+| [context-manager](../plugins/agent-orchestration/agents/context-manager.md) | haiku | マルチエージェントコンテキスト管理 |
 
-## Model Configuration
+## モデル設定
 
-Agents are assigned to specific Claude models based on task complexity and computational requirements.
+エージェントは、タスクの複雑さと計算要件に基づいて特定のClaudeモデルに割り当てられます。
 
-### Model Distribution Summary
+### モデル配分サマリー
 
-| Model | Agent Count | Use Case |
+| モデル | エージェント数 | ユースケース |
 |-------|-------------|----------|
-| Haiku | 47 | Fast execution tasks: testing, documentation, ops, database optimization, business |
-| Sonnet | 97 | Complex reasoning, architecture, language expertise, orchestration, security |
+| Haiku | 47 | 高速実行タスク：テスト、ドキュメント、運用、データベース最適化、ビジネス |
+| Sonnet | 97 | 複雑な推論、アーキテクチャ、言語専門知識、オーケストレーション、セキュリティ |
 
-### Model Selection Criteria
+### モデル選択基準
 
-#### Haiku - Fast Execution & Deterministic Tasks
+#### Haiku - 高速実行と決定論的タスク
 
-**Use when:**
-- Generating code from well-defined specifications
-- Creating tests following established patterns
-- Writing documentation with clear templates
-- Executing infrastructure operations
-- Performing database query optimization
-- Handling customer support responses
-- Processing SEO optimization tasks
-- Managing deployment pipelines
+**使用する場合：**
+- 明確に定義された仕様からコードを生成
+- 確立されたパターンに従ってテストを作成
+- 明確なテンプレートでドキュメントを作成
+- インフラストラクチャ操作を実行
+- データベースクエリの最適化を実行
+- カスタマーサポートレスポンスを処理
+- SEO最適化タスクを処理
+- デプロイメントパイプラインを管理
 
-#### Sonnet - Complex Reasoning & Architecture
+#### Sonnet - 複雑な推論とアーキテクチャ
 
-**Use when:**
-- Designing system architecture
-- Making technology selection decisions
-- Performing security audits
-- Reviewing code for architectural patterns
-- Creating complex AI/ML pipelines
-- Providing language-specific expertise
-- Orchestrating multi-agent workflows
-- Handling business-critical legal/HR matters
+**使用する場合：**
+- システムアーキテクチャを設計
+- 技術選定の決定を行う
+- セキュリティ監査を実施
+- アーキテクチャパターンのコードレビュー
+- 複雑なAI/MLパイプラインを作成
+- 言語固有の専門知識を提供
+- マルチエージェントワークフローをオーケストレーション
+- ビジネスクリティカルな法務/HR事項を処理
 
-### Hybrid Orchestration Patterns
+### ハイブリッドオーケストレーションパターン
 
-The plugin ecosystem leverages Sonnet + Haiku orchestration for optimal performance and cost efficiency:
+プラグインエコシステムは、最適なパフォーマンスとコスト効率のためにSonnet + Haikuオーケストレーションを活用します：
 
-#### Pattern 1: Planning → Execution
+#### パターン1: 計画 → 実行
 ```
-Sonnet: backend-architect (design API architecture)
+Sonnet: backend-architect（APIアーキテクチャを設計）
   ↓
-Haiku: Generate API endpoints following spec
+Haiku: 仕様に従ってAPIエンドポイントを生成
   ↓
-Haiku: test-automator (generate comprehensive tests)
+Haiku: test-automator（包括的なテストを生成）
   ↓
-Sonnet: code-reviewer (architectural review)
-```
-
-#### Pattern 2: Reasoning → Action (Incident Response)
-```
-Sonnet: incident-responder (diagnose issue, create strategy)
-  ↓
-Haiku: devops-troubleshooter (execute fixes)
-  ↓
-Haiku: deployment-engineer (deploy hotfix)
-  ↓
-Haiku: Implement monitoring alerts
+Sonnet: code-reviewer（アーキテクチャレビュー）
 ```
 
-#### Pattern 3: Complex → Simple (Database Design)
+#### パターン2: 推論 → アクション（インシデント対応）
 ```
-Sonnet: database-architect (schema design, technology selection)
+Sonnet: incident-responder（問題を診断し、戦略を作成）
   ↓
-Haiku: sql-pro (generate migration scripts)
+Haiku: devops-troubleshooter（修正を実行）
   ↓
-Haiku: database-admin (execute migrations)
+Haiku: deployment-engineer（ホットフィックスをデプロイ）
   ↓
-Haiku: database-optimizer (tune query performance)
-```
-
-#### Pattern 4: Multi-Agent Workflows
-```
-Full-Stack Feature Development:
-Sonnet: backend-architect + frontend-developer (design components)
-  ↓
-Haiku: Generate code following designs
-  ↓
-Haiku: test-automator (unit + integration tests)
-  ↓
-Sonnet: security-auditor (security review)
-  ↓
-Haiku: deployment-engineer (CI/CD setup)
-  ↓
-Haiku: Setup observability stack
+Haiku: モニタリングアラートを実装
 ```
 
-## Agent Invocation
+#### パターン3: 複雑 → シンプル（データベース設計）
+```
+Sonnet: database-architect（スキーマ設計、技術選定）
+  ↓
+Haiku: sql-pro（マイグレーションスクリプトを生成）
+  ↓
+Haiku: database-admin（マイグレーションを実行）
+  ↓
+Haiku: database-optimizer（クエリパフォーマンスを調整）
+```
 
-### Natural Language
+#### パターン4: マルチエージェントワークフロー
+```
+フルスタック機能開発:
+Sonnet: backend-architect + frontend-developer（コンポーネントを設計）
+  ↓
+Haiku: 設計に従ってコードを生成
+  ↓
+Haiku: test-automator（ユニット + 統合テスト）
+  ↓
+Sonnet: security-auditor（セキュリティレビュー）
+  ↓
+Haiku: deployment-engineer（CI/CDセットアップ）
+  ↓
+Haiku: 可観測性スタックをセットアップ
+```
 
-Agents can be invoked through natural language when you need Claude to reason about which specialist to use:
+## エージェントの呼び出し
+
+### 自然言語
+
+どのスペシャリストを使用するかClaudeに推論させる必要がある場合、エージェントは自然言語で呼び出すことができます：
 
 ```
-"Use backend-architect to design the authentication API"
-"Have security-auditor scan for OWASP vulnerabilities"
-"Get performance-engineer to optimize this database query"
+"backend-architectを使用して認証APIを設計してください"
+"security-auditorにOWASP脆弱性をスキャンさせてください"
+"performance-engineerにこのデータベースクエリを最適化させてください"
 ```
 
-### Slash Commands
+### スラッシュコマンド
 
-Many agents are accessible through plugin slash commands for direct invocation:
+多くのエージェントは、直接呼び出しのためにプラグインスラッシュコマンドを通じてアクセス可能です：
 
 ```bash
 /backend-development:feature-development user authentication
@@ -314,13 +314,13 @@ Many agents are accessible through plugin slash commands for direct invocation:
 /incident-response:smart-fix "memory leak in payment service"
 ```
 
-## Contributing
+## 貢献
 
-To add a new agent:
+新しいエージェントを追加するには：
 
-1. Create `plugins/{plugin-name}/agents/{agent-name}.md`
-2. Add frontmatter with name, description, and model assignment
-3. Write comprehensive system prompt
-4. Update plugin definition in `.claude-plugin/marketplace.json`
+1. `plugins/{plugin-name}/agents/{agent-name}.md`を作成
+2. 名前、説明、モデル割り当てを含むフロントマターを追加
+3. 包括的なシステムプロンプトを記述
+4. `.claude-plugin/marketplace.json`のプラグイン定義を更新
 
-See [Contributing Guide](../CONTRIBUTING.md) for details.
+詳細については[貢献ガイド](../CONTRIBUTING.md)を参照してください。

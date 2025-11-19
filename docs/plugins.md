@@ -1,309 +1,309 @@
-# Complete Plugin Reference
+# 完全なプラグインリファレンス
 
-Browse all **63 focused, single-purpose plugins** organized by category.
+カテゴリ別に整理された**63の集中的で単一目的のプラグイン**をご覧ください。
 
-## Quick Start - Essential Plugins
+## クイックスタート - 必須プラグイン
 
-> 💡 **Getting Started?** Install these popular plugins for immediate productivity gains.
+> 💡 **はじめて使う方へ** これらの人気プラグインをインストールして、すぐに生産性を向上させましょう。
 
-### Development Essentials
+### 開発の必需品
 
-**code-documentation** - Documentation and technical writing
+**code-documentation** - ドキュメントとテクニカルライティング
 
 ```bash
 /plugin install code-documentation
 ```
 
-Automated doc generation, code explanation, and tutorial creation for comprehensive technical documentation.
+包括的な技術ドキュメントのための自動ドキュメント生成、コード説明、チュートリアル作成。
 
-**debugging-toolkit** - Smart debugging and developer experience
+**debugging-toolkit** - スマートデバッグと開発者体験
 
 ```bash
 /plugin install debugging-toolkit
 ```
 
-Interactive debugging, error analysis, and DX optimization for faster problem resolution.
+より迅速な問題解決のためのインタラクティブデバッグ、エラー分析、DX最適化。
 
-**git-pr-workflows** - Git automation and PR enhancement
+**git-pr-workflows** - Git自動化とPR強化
 
 ```bash
 /plugin install git-pr-workflows
 ```
 
-Git workflow automation, pull request enhancement, and team onboarding processes.
+Gitワークフロー自動化、プルリクエスト強化、チームオンボーディングプロセス。
 
-### Full-Stack Development
+### フルスタック開発
 
-**backend-development** - Backend API design and architecture
+**backend-development** - バックエンドAPI設計とアーキテクチャ
 
 ```bash
 /plugin install backend-development
 ```
 
-RESTful and GraphQL API design with test-driven development and modern backend architecture patterns.
+テスト駆動開発と最新のバックエンドアーキテクチャパターンによるRESTfulおよびGraphQL API設計。
 
-**frontend-mobile-development** - UI and mobile development
+**frontend-mobile-development** - UIとモバイル開発
 
 ```bash
 /plugin install frontend-mobile-development
 ```
 
-React/React Native component development with automated scaffolding and cross-platform implementation.
+自動スキャフォールディングとクロスプラットフォーム実装によるReact/React Nativeコンポーネント開発。
 
-**full-stack-orchestration** - End-to-end feature development
+**full-stack-orchestration** - エンドツーエンド機能開発
 
 ```bash
 /plugin install full-stack-orchestration
 ```
 
-Multi-agent coordination from backend → frontend → testing → security → deployment.
+バックエンド → フロントエンド → テスト → セキュリティ → デプロイメントまでのマルチエージェント調整。
 
-### Testing & Quality
+### テストと品質
 
-**unit-testing** - Automated test generation
+**unit-testing** - 自動テスト生成
 
 ```bash
 /plugin install unit-testing
 ```
 
-Generate pytest (Python) and Jest (JavaScript) unit tests automatically with comprehensive edge case coverage.
+包括的なエッジケースカバレッジを備えたpytest（Python）とJest（JavaScript）ユニットテストを自動生成。
 
-**code-review-ai** - AI-powered code review
+**code-review-ai** - AI搭載のコードレビュー
 
 ```bash
 /plugin install code-review-ai
 ```
 
-Architectural analysis, security assessment, and code quality review with actionable feedback.
+実行可能なフィードバックを伴うアーキテクチャ分析、セキュリティ評価、コード品質レビュー。
 
-### Infrastructure & Operations
+### インフラストラクチャと運用
 
-**cloud-infrastructure** - Cloud architecture design
+**cloud-infrastructure** - クラウドアーキテクチャ設計
 
 ```bash
 /plugin install cloud-infrastructure
 ```
 
-AWS/Azure/GCP architecture, Kubernetes setup, Terraform IaC, and multi-cloud cost optimization.
+AWS/Azure/GCPアーキテクチャ、Kubernetesセットアップ、Terraform IaC、マルチクラウドコスト最適化。
 
-**incident-response** - Production incident management
+**incident-response** - 本番インシデント管理
 
 ```bash
 /plugin install incident-response
 ```
 
-Rapid incident triage, root cause analysis, and automated resolution workflows for production systems.
+本番システムの迅速なインシデントトリアージ、根本原因分析、自動解決ワークフロー。
 
-### Language Support
+### 言語サポート
 
-**python-development** - Python project scaffolding
+**python-development** - Pythonプロジェクトスキャフォールディング
 
 ```bash
 /plugin install python-development
 ```
 
-FastAPI/Django project initialization with modern tooling (uv, ruff) and production-ready architecture.
+最新ツール（uv、ruff）と本番環境対応アーキテクチャによるFastAPI/Djangoプロジェクト初期化。
 
-**javascript-typescript** - JavaScript/TypeScript scaffolding
+**javascript-typescript** - JavaScript/TypeScriptスキャフォールディング
 
 ```bash
 /plugin install javascript-typescript
 ```
 
-Next.js, React + Vite, and Node.js project setup with pnpm and TypeScript best practices.
+pnpmとTypeScriptベストプラクティスによるNext.js、React + Vite、Node.jsプロジェクトセットアップ。
 
 ---
 
-## Complete Plugin Catalog
+## 完全なプラグインカタログ
 
-### 🎨 Development (4 plugins)
+### 🎨 開発（4プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **debugging-toolkit** | Interactive debugging and DX optimization | `/plugin install debugging-toolkit` |
-| **backend-development** | Backend API design with GraphQL and TDD | `/plugin install backend-development` |
-| **frontend-mobile-development** | Frontend UI and mobile development | `/plugin install frontend-mobile-development` |
-| **multi-platform-apps** | Cross-platform app coordination (web/iOS/Android) | `/plugin install multi-platform-apps` |
+| **debugging-toolkit** | インタラクティブデバッグとDX最適化 | `/plugin install debugging-toolkit` |
+| **backend-development** | GraphQLとTDDによるバックエンドAPI設計 | `/plugin install backend-development` |
+| **frontend-mobile-development** | フロントエンドUIとモバイル開発 | `/plugin install frontend-mobile-development` |
+| **multi-platform-apps** | クロスプラットフォームアプリ調整（web/iOS/Android） | `/plugin install multi-platform-apps` |
 
-### 📚 Documentation (2 plugins)
+### 📚 ドキュメント（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **code-documentation** | Documentation generation and code explanation | `/plugin install code-documentation` |
-| **documentation-generation** | OpenAPI specs, Mermaid diagrams, tutorials | `/plugin install documentation-generation` |
+| **code-documentation** | ドキュメント生成とコード説明 | `/plugin install code-documentation` |
+| **documentation-generation** | OpenAPI仕様、Mermaid図、チュートリアル | `/plugin install documentation-generation` |
 
-### 🔄 Workflows (3 plugins)
+### 🔄 ワークフロー（3プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **git-pr-workflows** | Git automation and PR enhancement | `/plugin install git-pr-workflows` |
-| **full-stack-orchestration** | End-to-end feature orchestration | `/plugin install full-stack-orchestration` |
-| **tdd-workflows** | Test-driven development methodology | `/plugin install tdd-workflows` |
+| **git-pr-workflows** | Git自動化とPR強化 | `/plugin install git-pr-workflows` |
+| **full-stack-orchestration** | エンドツーエンド機能オーケストレーション | `/plugin install full-stack-orchestration` |
+| **tdd-workflows** | テスト駆動開発手法 | `/plugin install tdd-workflows` |
 
-### ✅ Testing (2 plugins)
+### ✅ テスト（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **unit-testing** | Automated unit test generation (Python/JavaScript) | `/plugin install unit-testing` |
-| **tdd-workflows** | Test-driven development methodology | `/plugin install tdd-workflows` |
+| **unit-testing** | 自動ユニットテスト生成（Python/JavaScript） | `/plugin install unit-testing` |
+| **tdd-workflows** | テスト駆動開発手法 | `/plugin install tdd-workflows` |
 
-### 🔍 Quality (3 plugins)
+### 🔍 品質（3プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **code-review-ai** | AI-powered architectural review | `/plugin install code-review-ai` |
-| **comprehensive-review** | Multi-perspective code analysis | `/plugin install comprehensive-review` |
-| **performance-testing-review** | Performance analysis and test coverage review | `/plugin install performance-testing-review` |
+| **code-review-ai** | AI搭載のアーキテクチャレビュー | `/plugin install code-review-ai` |
+| **comprehensive-review** | 多角的なコード分析 | `/plugin install comprehensive-review` |
+| **performance-testing-review** | パフォーマンス分析とテストカバレッジレビュー | `/plugin install performance-testing-review` |
 
-### 🛠️ Utilities (4 plugins)
+### 🛠️ ユーティリティ（4プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **code-refactoring** | Code cleanup and technical debt management | `/plugin install code-refactoring` |
-| **dependency-management** | Dependency auditing and version management | `/plugin install dependency-management` |
-| **error-debugging** | Error analysis and trace debugging | `/plugin install error-debugging` |
-| **team-collaboration** | Team workflows and standup automation | `/plugin install team-collaboration` |
+| **code-refactoring** | コードクリーンアップと技術的負債管理 | `/plugin install code-refactoring` |
+| **dependency-management** | 依存関係監査とバージョン管理 | `/plugin install dependency-management` |
+| **error-debugging** | エラー分析とトレースデバッグ | `/plugin install error-debugging` |
+| **team-collaboration** | チームワークフローとスタンドアップ自動化 | `/plugin install team-collaboration` |
 
-### 🤖 AI & ML (4 plugins)
+### 🤖 AI & ML（4プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **llm-application-dev** | LLM apps and prompt engineering | `/plugin install llm-application-dev` |
-| **agent-orchestration** | Multi-agent system optimization | `/plugin install agent-orchestration` |
-| **context-management** | Context persistence and restoration | `/plugin install context-management` |
-| **machine-learning-ops** | ML training pipelines and MLOps | `/plugin install machine-learning-ops` |
+| **llm-application-dev** | LLMアプリとプロンプトエンジニアリング | `/plugin install llm-application-dev` |
+| **agent-orchestration** | マルチエージェントシステム最適化 | `/plugin install agent-orchestration` |
+| **context-management** | コンテキストの永続化と復元 | `/plugin install context-management` |
+| **machine-learning-ops** | MLトレーニングパイプラインとMLOps | `/plugin install machine-learning-ops` |
 
-### 📊 Data (2 plugins)
+### 📊 データ（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **data-engineering** | ETL pipelines and data warehouses | `/plugin install data-engineering` |
-| **data-validation-suite** | Schema validation and data quality | `/plugin install data-validation-suite` |
+| **data-engineering** | ETLパイプラインとデータウェアハウス | `/plugin install data-engineering` |
+| **data-validation-suite** | スキーマ検証とデータ品質 | `/plugin install data-validation-suite` |
 
-### 🗄️ Database (2 plugins)
+### 🗄️ データベース（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **database-design** | Database architecture and schema design | `/plugin install database-design` |
-| **database-migrations** | Database migration automation | `/plugin install database-migrations` |
+| **database-design** | データベースアーキテクチャとスキーマ設計 | `/plugin install database-design` |
+| **database-migrations** | データベースマイグレーション自動化 | `/plugin install database-migrations` |
 
-### 🚨 Operations (4 plugins)
+### 🚨 運用（4プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **incident-response** | Production incident management | `/plugin install incident-response` |
-| **error-diagnostics** | Error tracing and root cause analysis | `/plugin install error-diagnostics` |
-| **distributed-debugging** | Distributed system tracing | `/plugin install distributed-debugging` |
-| **observability-monitoring** | Metrics, logging, tracing, and SLO | `/plugin install observability-monitoring` |
+| **incident-response** | 本番インシデント管理 | `/plugin install incident-response` |
+| **error-diagnostics** | エラートレースと根本原因分析 | `/plugin install error-diagnostics` |
+| **distributed-debugging** | 分散システムトレース | `/plugin install distributed-debugging` |
+| **observability-monitoring** | メトリクス、ログ、トレース、SLO | `/plugin install observability-monitoring` |
 
-### ⚡ Performance (2 plugins)
+### ⚡ パフォーマンス（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **application-performance** | Application profiling and optimization | `/plugin install application-performance` |
-| **database-cloud-optimization** | Database query and cloud cost optimization | `/plugin install database-cloud-optimization` |
+| **application-performance** | アプリケーションプロファイリングと最適化 | `/plugin install application-performance` |
+| **database-cloud-optimization** | データベースクエリとクラウドコスト最適化 | `/plugin install database-cloud-optimization` |
 
-### ☁️ Infrastructure (5 plugins)
+### ☁️ インフラストラクチャ（5プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **deployment-strategies** | Deployment patterns and rollback automation | `/plugin install deployment-strategies` |
-| **deployment-validation** | Pre-deployment checks and validation | `/plugin install deployment-validation` |
-| **kubernetes-operations** | K8s manifests and GitOps workflows | `/plugin install kubernetes-operations` |
-| **cloud-infrastructure** | AWS/Azure/GCP cloud architecture | `/plugin install cloud-infrastructure` |
-| **cicd-automation** | CI/CD pipeline configuration | `/plugin install cicd-automation` |
+| **deployment-strategies** | デプロイメントパターンとロールバック自動化 | `/plugin install deployment-strategies` |
+| **deployment-validation** | デプロイ前チェックと検証 | `/plugin install deployment-validation` |
+| **kubernetes-operations** | K8sマニフェストとGitOpsワークフロー | `/plugin install kubernetes-operations` |
+| **cloud-infrastructure** | AWS/Azure/GCPクラウドアーキテクチャ | `/plugin install cloud-infrastructure` |
+| **cicd-automation** | CI/CDパイプライン設定 | `/plugin install cicd-automation` |
 
-### 🔒 Security (4 plugins)
+### 🔒 セキュリティ（4プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **security-scanning** | SAST analysis and vulnerability scanning | `/plugin install security-scanning` |
-| **security-compliance** | SOC2/HIPAA/GDPR compliance | `/plugin install security-compliance` |
-| **backend-api-security** | API security and authentication | `/plugin install backend-api-security` |
-| **frontend-mobile-security** | XSS/CSRF prevention and mobile security | `/plugin install frontend-mobile-security` |
+| **security-scanning** | SAST分析と脆弱性スキャン | `/plugin install security-scanning` |
+| **security-compliance** | SOC2/HIPAA/GDPRコンプライアンス | `/plugin install security-compliance` |
+| **backend-api-security** | APIセキュリティと認証 | `/plugin install backend-api-security` |
+| **frontend-mobile-security** | XSS/CSRF防止とモバイルセキュリティ | `/plugin install frontend-mobile-security` |
 
-### 🔄 Modernization (2 plugins)
+### 🔄 モダナイゼーション（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **framework-migration** | Framework upgrades and migration planning | `/plugin install framework-migration` |
-| **codebase-cleanup** | Technical debt reduction and cleanup | `/plugin install codebase-cleanup` |
+| **framework-migration** | フレームワークアップグレードと移行計画 | `/plugin install framework-migration` |
+| **codebase-cleanup** | 技術的負債の削減とクリーンアップ | `/plugin install codebase-cleanup` |
 
-### 🌐 API (2 plugins)
+### 🌐 API（2プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **api-scaffolding** | REST/GraphQL API generation | `/plugin install api-scaffolding` |
-| **api-testing-observability** | API testing and monitoring | `/plugin install api-testing-observability` |
+| **api-scaffolding** | REST/GraphQL API生成 | `/plugin install api-scaffolding` |
+| **api-testing-observability** | APIテストと監視 | `/plugin install api-testing-observability` |
 
-### 📢 Marketing (4 plugins)
+### 📢 マーケティング（4プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **seo-content-creation** | SEO content writing and planning | `/plugin install seo-content-creation` |
-| **seo-technical-optimization** | Meta tags, keywords, and schema markup | `/plugin install seo-technical-optimization` |
-| **seo-analysis-monitoring** | Content analysis and authority building | `/plugin install seo-analysis-monitoring` |
-| **content-marketing** | Content strategy and web research | `/plugin install content-marketing` |
+| **seo-content-creation** | SEOコンテンツライティングと計画 | `/plugin install seo-content-creation` |
+| **seo-technical-optimization** | メタタグ、キーワード、スキーママークアップ | `/plugin install seo-technical-optimization` |
+| **seo-analysis-monitoring** | コンテンツ分析とオーソリティ構築 | `/plugin install seo-analysis-monitoring` |
+| **content-marketing** | コンテンツ戦略とWeb調査 | `/plugin install content-marketing` |
 
-### 💼 Business (3 plugins)
+### 💼 ビジネス（3プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **business-analytics** | KPI tracking and financial reporting | `/plugin install business-analytics` |
-| **hr-legal-compliance** | HR policies and legal templates | `/plugin install hr-legal-compliance` |
-| **customer-sales-automation** | Support and sales automation | `/plugin install customer-sales-automation` |
+| **business-analytics** | KPI追跡と財務報告 | `/plugin install business-analytics` |
+| **hr-legal-compliance** | HR方針と法的テンプレート | `/plugin install hr-legal-compliance` |
+| **customer-sales-automation** | サポートと営業自動化 | `/plugin install customer-sales-automation` |
 
-### 💻 Languages (7 plugins)
+### 💻 言語（7プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **python-development** | Python 3.12+ with Django/FastAPI | `/plugin install python-development` |
-| **javascript-typescript** | JavaScript/TypeScript with Node.js | `/plugin install javascript-typescript` |
-| **systems-programming** | Rust, Go, C, C++ for systems development | `/plugin install systems-programming` |
-| **jvm-languages** | Java, Scala, C# with enterprise patterns | `/plugin install jvm-languages` |
-| **web-scripting** | PHP and Ruby for web applications | `/plugin install web-scripting` |
-| **functional-programming** | Elixir with OTP and Phoenix | `/plugin install functional-programming` |
-| **arm-cortex-microcontrollers** | ARM Cortex-M firmware and drivers | `/plugin install arm-cortex-microcontrollers` |
+| **python-development** | Django/FastAPIを使用したPython 3.12+ | `/plugin install python-development` |
+| **javascript-typescript** | Node.jsを使用したJavaScript/TypeScript | `/plugin install javascript-typescript` |
+| **systems-programming** | システム開発用のRust、Go、C、C++ | `/plugin install systems-programming` |
+| **jvm-languages** | エンタープライズパターンを使用したJava、Scala、C# | `/plugin install jvm-languages` |
+| **web-scripting** | Webアプリケーション用のPHPとRuby | `/plugin install web-scripting` |
+| **functional-programming** | OTPとPhoenixを使用したElixir | `/plugin install functional-programming` |
+| **arm-cortex-microcontrollers** | ARM Cortex-Mファームウェアとドライバ | `/plugin install arm-cortex-microcontrollers` |
 
-### 🔗 Blockchain (1 plugin)
+### 🔗 ブロックチェーン（1プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **blockchain-web3** | Smart contracts and DeFi protocols | `/plugin install blockchain-web3` |
+| **blockchain-web3** | スマートコントラクトとDeFiプロトコル | `/plugin install blockchain-web3` |
 
-### 💰 Finance (1 plugin)
+### 💰 金融（1プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **quantitative-trading** | Algorithmic trading and risk management | `/plugin install quantitative-trading` |
+| **quantitative-trading** | アルゴリズム取引とリスク管理 | `/plugin install quantitative-trading` |
 
-### 💳 Payments (1 plugin)
+### 💳 決済（1プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **payment-processing** | Stripe/PayPal integration and billing | `/plugin install payment-processing` |
+| **payment-processing** | Stripe/PayPal統合と請求 | `/plugin install payment-processing` |
 
-### 🎮 Gaming (1 plugin)
+### 🎮 ゲーム（1プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **game-development** | Unity and Minecraft plugin development | `/plugin install game-development` |
+| **game-development** | UnityとMinecraftプラグイン開発 | `/plugin install game-development` |
 
-### ♿ Accessibility (1 plugin)
+### ♿ アクセシビリティ（1プラグイン）
 
-| Plugin | Description | Install |
+| プラグイン | 説明 | インストール |
 |--------|-------------|---------|
-| **accessibility-compliance** | WCAG auditing and inclusive design | `/plugin install accessibility-compliance` |
+| **accessibility-compliance** | WCAG監査とインクルーシブデザイン | `/plugin install accessibility-compliance` |
 
-## Plugin Structure
+## プラグイン構造
 
-Each plugin contains:
+各プラグインには以下が含まれます：
 
-- **agents/** - Specialized agents for that domain
-- **commands/** - Tools and workflows specific to that plugin
-- **skills/** - Optional modular knowledge packages (progressive disclosure)
+- **agents/** - そのドメインに特化したエージェント
+- **commands/** - そのプラグイン固有のツールとワークフロー
+- **skills/** - オプションのモジュール式知識パッケージ（段階的開示）
 
-Example:
+例：
 ```
 plugins/python-development/
 ├── agents/
@@ -320,55 +320,55 @@ plugins/python-development/
     └── uv-package-manager/
 ```
 
-## Installation
+## インストール
 
-### Step 1: Add the Marketplace
+### ステップ1：マーケットプレイスを追加
 
 ```bash
 /plugin marketplace add wshobson/agents
 ```
 
-This makes all 63 plugins available for installation, but **does not load any agents or tools** into your context.
+これにより、63のプラグインすべてがインストール可能になりますが、**エージェントやツールはコンテキストに読み込まれません**。
 
-### Step 2: Install Specific Plugins
+### ステップ2：特定のプラグインをインストール
 
-Browse available plugins:
+利用可能なプラグインを閲覧：
 
 ```bash
 /plugin
 ```
 
-Install only the plugins you need:
+必要なプラグインのみをインストール：
 
 ```bash
 /plugin install python-development
 /plugin install backend-development
 ```
 
-Each installed plugin loads **only its specific agents and commands** into Claude's context.
+インストールされた各プラグインは、**その特定のエージェントとコマンドのみ**をClaudeのコンテキストに読み込みます。
 
-## Plugin Design Principles
+## プラグイン設計原則
 
-### Single Responsibility
-- Each plugin does **one thing well** (Unix philosophy)
-- Clear, focused purposes (describable in 5-10 words)
-- Average plugin size: **3.4 components** (follows Anthropic's 2-8 pattern)
+### 単一責任
+- 各プラグインは**一つのことをうまく行う**（Unix哲学）
+- 明確で焦点を絞った目的（5-10語で説明可能）
+- 平均プラグインサイズ：**3.4コンポーネント**（Anthropicの2-8パターンに従う）
 
-### Minimal Token Usage
-- Install only what you need
-- Each plugin loads only its specific agents and tools
-- No unnecessary resources loaded into context
-- Better context efficiency with granular plugins
+### 最小限のトークン使用
+- 必要なものだけをインストール
+- 各プラグインはその特定のエージェントとツールのみを読み込む
+- 不要なリソースはコンテキストに読み込まれない
+- 粒度の細かいプラグインによるコンテキスト効率の向上
 
-### Composability
-- Mix and match plugins for complex workflows
-- Workflow orchestrators compose focused plugins
-- Clear boundaries between plugins
-- No forced feature bundling
+### 組み合わせ可能性
+- 複雑なワークフローのためにプラグインを組み合わせる
+- ワークフローオーケストレーターが焦点を絞ったプラグインを構成
+- プラグイン間の明確な境界
+- 強制的な機能バンドルなし
 
-## See Also
+## 関連項目
 
-- [Agent Skills](./agent-skills.md) - 47 specialized skills across plugins
-- [Agent Reference](./agents.md) - Complete agent catalog
-- [Usage Guide](./usage.md) - Commands and workflows
-- [Architecture](./architecture.md) - Design principles
+- [Agent Skills](./agent-skills.md) - プラグイン全体にわたる47の専門スキル
+- [Agent Reference](./agents.md) - 完全なエージェントカタログ
+- [Usage Guide](./usage.md) - コマンドとワークフロー
+- [Architecture](./architecture.md) - 設計原則
